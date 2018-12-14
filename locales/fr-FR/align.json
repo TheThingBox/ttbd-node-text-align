@@ -1,0 +1,12 @@
+{
+    "align": {
+        "name": "Nom",
+        "align": "Alignement",
+        "pos": {
+          "setBy": "utiliser msg.align",
+          "left": "Gauche",
+          "center": "Centre",
+          "right": "Droite"
+        }
+    }
+}

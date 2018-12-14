@@ -1,0 +1,10 @@
+{
+  "name": "ttbd-node-text-align",
+  "version": "0.1.0",
+  "description": "This node sets an alignment for the text",
+  "node-red": {
+    "nodes": {
+      "tsa_align": "align.js"
+    }
+  }
+}

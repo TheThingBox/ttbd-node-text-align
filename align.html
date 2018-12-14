@@ -1,0 +1,36 @@
+<script type="text/x-red" data-template-name="tsa_align">
+  <div class="form-row">
+    <label for="node-input-align"><i class="icon-tag"></i> <span data-i18n="align.align"></span></label>
+    <select id="node-input-align">
+      <option value="setBy" data-i18n="align.pos.setBy"></option>
+      <option value="left" data-i18n="align.pos.left"></option>
+      <option value="center" data-i18n="align.pos.center"></option>
+      <option value="right" data-i18n="align.pos.right"></option>
+    </select>
+  </div>
+  <div class="form-row">
+    <label for="node-input-name"><i class="icon-tag"></i> <span data-i18n="align.name"></span></label>
+    <input type="text" id="node-input-name" data-i18n="[placeholder]align.name">
+  </div>
+</script>
+
+<script type="text/javascript">
+  RED.nodes.registerType ( "tsa_align", {
+    category: "ledmatrix",
+    defaults: {
+      align: { value: "" },
+      name : {value: ""}
+    },
+    color: "#FFF",
+    paletteLabel : "alignment",
+    inputs: 1,
+    outputs: 1,
+    icon: "marker.png",
+    label: function() {
+      return this.name || this.align || "align";
+    },
+    labelStyle: function() {
+      return this.name?"node_label_italic":"";
+    }
+  });
+</script>
